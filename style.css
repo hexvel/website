@@ -50,6 +50,10 @@ a, a:hover, a:visited {
     text-decoration: none;
 }
 
+header .header-menu li:hover
+{
+    color: rgb(91, 171, 246);
+}
 
 
 .baner_sayHi {
