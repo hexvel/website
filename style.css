@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference){
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
 *
 {
     font-family: Arial,Helvetica,sans-serif;
@@ -54,7 +60,6 @@ header .header-menu li:hover
 {
     color: rgb(91, 171, 246);
 }
-
 
 .baner_sayHi {
     font-size: 32px;
@@ -180,13 +185,18 @@ header .header_logo
     justify-content: center;
     padding: 32px;
     border-radius: 16px;
+    transition: 0.3s;
 }
 
 .skills .skill_icon {
     width: 112px;
 }
 
-
+.skills_skill:hover
+{
+    cursor: pointer;
+    background: #131313;
+}
 
 .skills_name {
     font-family: "Arial";
@@ -194,4 +204,32 @@ header .header_logo
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+}
+
+.socialContacts {
+    background-color: #141414;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socialContacts .wrapper {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    color: #fff;
+    padding: 32px;
+}
+
+.socialContacts p {
+    max-width: 520px;
+}
+
+.header-link
+{
+    color: #fff;
 }
