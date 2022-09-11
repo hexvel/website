@@ -4,30 +4,83 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>My first website</title>
+    <title>My site</title>
 </head>
 <body>
-    <nav class="socials">
-        <ul>
-            <li><a href="#"><img src="images/icon-facebook.png" /></a></li>
-            <li><a href="#"><img src="images/icon-twitter.png" /></a></li>
-            <li><a href="https://google.com"><img src="images/icon-google.png" /></a></li>
-            <li><a href="#"><img src="images/icon-dribbble.png" /></a></li>
-            <li><a href="https://instagram.com"><img src="images/icon-linkedin.png" /></a></li>
-            <li><a href="#"><img src="images/icon-pinterest.png" /></a></li>
-        </ul>
-    </nav>
-    <div class="text">
-        <p>
-            <h2>Welcome<br/>
-                <p id="font">Our new site is coming soon!</p>
-            </h2>
-            <p id="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/>
-                Repellendus hic quos numquam eius, pariatur, <br>
-                accusantium dolore libero reiciendis odit nisi laboriosam provident temporibus<br>
-                molestiae quia inventore temporedolor aliquam.</p>
-        </p>
-        <p id="icons"><a href="#">>> More info</a></p>
+    <header style="position: fixed;">
+        <div class="wrapper">
+            <h1 class="header_logo"><span class="mark">&lt;&sol;D</span>imas<span class="mark">01</span>u<span class="mark">&gt;</span></h1>
+            <menu>
+                <div class="header-menu">
+                    <a href="#about">
+                        <li>
+                            <span>обо мне<span>
+                        </li>
+                    </a>
+                    <a href="#skills">
+                        <li>
+                            <span>навыки</span>
+                        </li>
+                    </a>
+                    <a href="#projects">
+                        <li>
+                            <span>проекты</span>
+                        </li>
+                    </a>
+                    <a href="#contacts">
+                        <li>
+                            <span>контакты</span>
+                        </li>
+                    </a>
+                </div>
+            </menu>
+        </div>
+    </header>
+    <div class="baner" id="about" style="padding-top: 91px;">
+        <div class="baner_sayHi">
+            <p>
+                Привет!<br/>
+                Меня зовут
+                <span class="mark">Дилмурод</span>.
+            </p>
+            <p>
+                Я <span class="mark">люблю</span> заниматься программированием<br>
+                и я <span class="mark">стремлюсь</span> стать <span class="mark">Front-end</span> разработчиком.
+                я считаю что это моё призвание.
+            </p>
+        </div>
+        <div class="qute">
+            <div class="wrapper">
+                <blockquote class="qute_text">
+                    Работай постоянно, не почитай работу для себя бедствием или бременем и не желай себе за это похвалы и участия.
+                    Общее
+                    благо – вот чего ты должен желать.
+                </blockquote>
+                <figcaption class="qute_author">— Марк Аврелий</figcaption>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <div class="wrapper">
+                <div class="skills_icons">
+                    <div class="skills_skill"> 
+                        <img src="pic/skill_html.svg" alt="картинка html" class="scill_icon skill_html">
+                        <p class="skill_name">HTML5</p>
+                    </div>
+                    <div class="skills_skill"> 
+                        <img src="pic/skill_css.svg" alt="картинка css" class="scill_icon skill_html">
+                        <p class="skill_name">CSS3</p>
+                    </div>
+                    <div class="skills_skill"> 
+                        <img src="pic/skill_js.svg" alt="картинка js" class="scill_icon skill_html">
+                        <p class="skill_name">JavaScript</p>
+                    </div>
+                    <div class="skills_skill"> 
+                        <img src="pic/skill_git.svg" alt="картинка git" class="scill_icon skill_html">
+                        <p class="skill_name">Git</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
