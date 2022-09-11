@@ -44,7 +44,6 @@ body
     position:absolute;
 	top: 0px;
 	left: 40px;
-    transition: 0.5s;
 }
 
 .socials ul {margin: 0; padding:0;}
@@ -54,20 +53,6 @@ body
 	float: left;
 	background: #393939;
 	padding:20px 10px 5px 10px;
-	margin: 1px;
-	opacity: .5;
-    transition: 0.5s;
-}
-
-.socials:hover ul li
-{
-    top: 0px;
-	left: 40px;
-    list-style: none;
-	display:block;
-	float: left;
-	background: #393939;
-	padding:100px 10px 5px 10px;
 	margin: 1px;
 	opacity: .5;
 }
