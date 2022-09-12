@@ -2,58 +2,34 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Типа портфолио</title>
+    <title>Test WebSite</title>
 </head>
 <body>
-    <header style="position: fixed;">
-        <div class="wrapper">
-          <h1 class="header_logo"><span class="mark">&lt;/D</span>imas<span class="mark">01</span>u></h1>
-          <menu>
-            <div class="header_menu">
-                <a href="#about">
-                    <li>
-                        <span>обо мне</span>
-                    </li>
-                </a>
-                <a href="#skills">
-                    <li>
-                        <span>навыки</span>
-                    </li>
-                </a>
-                <a href="#projects">
-                    <li>
-                        <span>проекты</span>
-                    </li>
-                </a>
-                <a href="#contacts">
-                    <li>
-                        <span>контакты</span>
-                    </li>
-                </a>
-            </div>
-          </menu>
+    <section>
+        <header>
+            <a href="#" class="logo">Water.</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="content">
+            <h2>Hapiness...<br><span>Crystal clear ocean water.</span></h2>
         </div>
-    </header>
-    <div class="baner" id="about" style="padding-top: 82px;">
-        <div class="new_box">
-            <img src="image.jpg" alt="херня">
-        </div>
-    </div>
-    <div class="baner" id="skills">
-        <div class="back_color" style="padding: 10px;">
-            <p>
-                В этой статье я вам расскажу как стать <span class="mark">полным далбоёбом</span><br>Но при этом знать <span class="mark">несколько</span> языков <span class="mark">программирования</span> ;)<br><br><br>
-            </p>
-            <p class="dalboyobs">
-                И так, давайте начнём с того кто такие далбоёбы
-            </p>
-            <p class="dalboyob">
-                кто такие долбаёбы....многие люди ищут ответ на этот вопрос, но не всем дано понять....многие думают что долбаёбы это неадекватные люди, так сказать те, которым на всё откровенно пофиг.....но это не так....это похуисты...кста к которым отношусь и я.....но далбаёбы, это те люди, которые эмоционально неуравновешенные, у которых слишком огромная духовная аура, и они постоянно выплескивают огромный спектр этой ауру, который выходит с эмоциями, и действиями не связанными с моральными нормами, нравами и законами общества.....это те люди, которые вышли за рамки своего бытия, их поступки, которые не имеют во многих степенях смысла, просто сами на подсознательном уровне выходят на ружу.....и это круто...они не пытаются выделяться, их просто все замечают!)))
-            </p>
-        </div>
-    </div>
+        <video src="water.mp4" autoplay muted loop></video>
+        <ul class="sci">
+            <li style="--i:1"><a href="#">ВКонтакте</a></li>
+            <li style="--i:2"><a href="#">Telegram</a></li>
+            <li style="--i:3"><a href="#">Steam</a></li>
+        </ul>
+        <ul class="navigation">
+            <li style="--i:1;"><a href="#">Home</a></li>
+            <li style="--i:2;"><a href="#">About</a></li>
+            <li style="--i:3;"><a href="#">Tor</a></li>
+            <li style="--i:4;"><a href="#">Contact</a></li>
+        </ul>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
