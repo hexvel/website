@@ -4,6 +4,23 @@
     }
 }
 
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header_logo {
+    font-size: 24px;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+    background-color: #070101;
+}
+
 *
 {
     font-family: Arial,Helvetica,sans-serif;
@@ -13,14 +30,65 @@ body
 {
     margin: 0;
     padding: 0;
-    background-color: #070101;
+    background-color: #544e4e;
     color: #fff;
     overflow-x: hidden;
 }
 
-div
+.baner .new_box
 {
-    display: block;
+    height: 50%;
+}
+
+.baner .back_color
+{
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.baner .dalboyobs
+{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: rgba(94, 191, 208, 0.645);
+    font-size: 24px;
+}
+
+.baner .dalboyob
+{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    justify-self: unset;
+    text-align: left;
+    color: rgb(193, 44, 175);
+    font-size: 20px;
+}
+
+.baner-header
+{
+    font-weight: bold;
+    padding: 20px;
+    color: #fff;
+}
+
+button
+{
+    background: #070101;
+}
+
+h1
+{
+    cursor: pointer;
+}
+
+.mark
+{
+    color: goldenrod;
+}
+
+header menu {
+    display: flex;
+    align-items: center;
 }
 
 menu
@@ -34,8 +102,7 @@ menu
     padding-inline-start: 40px;
 }
 
-header .header-menu
-{
+header .header_menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -43,117 +110,35 @@ header .header-menu
     margin: 0;
 }
 
-header .header-menu li
-{
-    padding: 8px 16px;
-    color: #fff;
-    transition: color .3s ease-out;
-    text-transform: uppercase;
-    text-decoration: none;
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
 a, a:hover, a:visited {
     text-decoration: none;
 }
 
-header .header-menu li:hover
+.wrapper .new_box
 {
-    color: rgb(91, 171, 246);
-}
-
-.baner_sayHi {
-    font-size: 32px;
-    font-weight: bold;
-    padding-left: 10%;
-}
-
-.baner_sayHi p {
-    max-width: 640px;
-}
-
-
-li {
-    text-align: -webkit-match-parent;
-}
-
-header
-{
-    padding: 0;
-    margin: 0;
-    background: #393939;
-    height: 60px;
-}
-
-.qute {
-    background: #131313;
-    position: relative;
-    z-index: 1000;
-    font-family: "Arial";
-    font-style: italic;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 37px;
-}
-
-.qute .wrapper {
-    padding: 177px 16px 100px 16px;
-    max-width: 950px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.qute_text::before {
-    content: "＂";
-    position: absolute;
-    top: -0.5em;
-    left: -1em;
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 135px;
-    color: #fcb93c;
-}
-
-.qute_author {
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.qute_text {
+    color: #fff;
     position: relative;
 }
 
-.mark
-{
-    color: rgb(91, 171, 246);
+header .header_menu li {
+    border-radius: 15px;
+    padding: 8px 16px;
+    color: #fff;
+    transition: color .3s ease-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-header .wrapper
+header .header_menu li:hover
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header
-{
-    height: 90px;
-    width: 100%;
-    position: relative;
-    z-index: 9999;
-    background-color: #070101;
-}
-
-
-header .header_logo
-{
-    font-size: 24px;
+    background-color: slategrey;
+    color: aqua;
 }
 
 .wrapper {
@@ -162,74 +147,16 @@ header .header_logo
     max-width: 1280px;
 }
 
-.skills {
-    background-color: #070101;
-    position: relative;
-    z-index: 1000;
+div {
+    display: block;
 }
 
-.skills_icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    padding: 10% 0;
-}
-
-
-.skills_skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 32px;
-    border-radius: 16px;
-    transition: 0.3s;
-}
-
-.skills .skill_icon {
-    width: 112px;
-}
-
-.skills_skill:hover
-{
-    cursor: pointer;
-    background: #131313;
-}
-
-.skills_name {
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-}
-
-.socialContacts {
-    background-color: #141414;
-}
-
-.socials {
-    display: flex;
-    gap: 20px;
-}
-
-.socialContacts .wrapper {
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 37px;
-    color: #fff;
-    padding: 32px;
-}
-
-.socialContacts p {
-    max-width: 520px;
-}
-
-.header-link
-{
-    color: #fff;
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
