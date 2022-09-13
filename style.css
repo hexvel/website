@@ -236,6 +236,7 @@ section.active .navigation
 
 section .navigation li a
 {
+    border-radius: 4px;
     color: #111;
     font-size: 1.5em;
     letter-spacing: 4px;
