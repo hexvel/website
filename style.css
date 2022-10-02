@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit&display=swap');
+
+@media (prefers-reduced-motion: no-preference){
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+
 body
 {
     margin: 0;
@@ -12,6 +21,7 @@ body
     margin-left: 120px;
     margin-top: 60px;
     position: absolute;
+    z-index: 999;
 }
 
 .task_menu
@@ -92,3 +102,52 @@ body
         transform: translateY(50px);
     }
 }
+
+@media(max-width: 934px)
+{
+
+    body
+    {
+        max-width: 64%;
+    }
+    img.persona
+    {
+        top: -60px;
+        max-width: 350px;
+        left: -620px;
+    }
+    .hi_logo
+    {
+        margin-left: 86%;
+        top: 315px;
+        height: 60px;
+        position: absolute;
+        z-index: 3;
+        animation: animate 3s linear infinite;
+    }
+    .bg_persona
+    {
+        margin-top: 120px;
+        margin-left: -220px;
+        position: absolute;
+        z-index: 1;
+        height: 540px;
+    }
+    .gib_logo
+    {
+        height: 90px;
+        margin-left: 50px;
+        top: -45px;
+        position: relative;
+        z-index: 999;
+    }
+    .log
+    {
+        display: flex;
+        gap: 20px;
+        float: right;
+        margin-right: -220px;
+        margin-top: 25px;
+    }
+
+}   
