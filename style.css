@@ -1,214 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit&display=swap');
-
-@media (prefers-reduced-motion: no-preference){
-    :root {
-        scroll-behavior: smooth;
-    }
-}
-
-*
+body
 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    background-image: url(images/bg.png);
+    position: relative;
 }
 
-body
+.gib_logo
 {
-    min-height: 1000px;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-}
-
-header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 0 60px;
-    background: #000;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    transition: 1s;   
-}
-
-header.sticky
-{
-    height: 80px;
-}
-
-header .banner
-{
+    height: 120px;
+    margin-left: 120px;
+    margin-top: 60px;
     position: absolute;
-    top: 0;
-    left: 0;
+}
+
+.task_menu
+{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 1s;
-}
-
-header.sticky .banner
-{
-    opacity: 0.5;
-}
-
-header .logo
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 15vw;
-    color: #fff;
-    font-weight: 700;
-    transition: 1s;
-    text-decoration: none;
+    position: relative;
     z-index: 1;
 }
 
-header.sticky .logo
+
+.logo
 {
-    position: absolute;
-    font-size: 2em;
-    left: 100px;
-    transform: translate(0, -50%);
+    height: 42px;
+    width: 42px;
 }
 
-nav
+.log
 {
-    position: relative;
     display: flex;
+    gap: 30px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-right: 100px;
+}
+
+.bg_persona
+{
+    margin-top: 100px;
+    margin-left: 35%;
+    position: absolute;
     z-index: 1;
 }
 
-nav ul
+.persona
 {
+    
+    margin-left: 710px;
     position: relative;
-    display: flex;
-    transition: 0.25s;
-    transform: translate(100px);
-    opacity: 0;
+    z-index: 3;
 }
 
-header.sticky nav ul
+.persona
 {
-    transform: translate(0);
-    opacity: 1;
-    transition-delay: 0.75s;
-    visibility: visible;
+    max-width: 700px;
+    animation: animate 3s linear infinite;
 }
 
-nav ul li
+@keyframes animate
 {
-    list-style: none;
+    0%,100%
+    {
+        transform: translateY(25px);
+    }
+    50%
+    {
+        transform: translateY(50px);
+    }
 }
 
-nav ul li a
+.hi_logo
 {
-    border-radius: 12px;
-    color: #fff;
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 1.2em;
-    text-decoration: none;
-    transition: 0.3s;
+
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -210px;
+    z-index: 3;
+    animation: animate 3s linear infinite;
 }
 
-nav ul li a:hover
-{
-    background: #03e9f4;
-    color: #111;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-}
-
-section
-{
-    margin-top: 50vh;
-    padding: 100px;
-}
-
-section h2
-{
-    font-size: 3em;
-}
-
-section p
-{
-    margin: 0;
-    font-size: 1.2em;
-}
-
-@media(max-width: 911px)
-{
-    section, header
+@keyframes animate {
+    0%,100%
     {
-        padding: 40px;
+        transform: translateY(25px);
     }
-    section h2
+    50%
     {
-        font-size: 2em;
-    }
-    header.sticky .logo
-    {
-        left: 40px;
-    }
-    header.sticky .banner
-    {
-        opacity: 0;
-    }
-    nav ul
-    {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    nav.active ul
-    {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        height: calc(100% - 80px);
-        background: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    nav ul a
-    {
-        font-size: 1.5em;
-        padding: 5 15px;
-    }
-    header.sticky .toggle
-    {
-        position: fixed;
-        top: 15px;
-        right: 40px;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        background: url(menu.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    header.sticky .toggle.active
-    {
-        cursor: pointer;
-        background: url(close.png);
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
+        transform: translateY(50px);
     }
 }
