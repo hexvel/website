@@ -105,8 +105,6 @@ body
 
 @media(max-width: 956px)
 {
-    @media(max-height: 750px)
-    {
     body
     {
         max-width: 64%;
@@ -149,6 +147,5 @@ body
         float: right;
         margin-right: -220px;
         margin-top: 25px;
-    }
     }
 }   
