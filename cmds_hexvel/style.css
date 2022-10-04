@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alkalami&family=Nabla&display=swap');
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: rgb(21, 2, 29);
+}
+ul li
+{
+    list-style: none;
+
+}
+
+header a
+{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+    color: rgb(0, 128, 255);
+    text-decoration: none;
+}
+
+.toggle ul li
+{
+    border-radius: 8px;
+    padding-top: 24px;
+    padding-right: 24px;
+    float: right;
+    transition: transform 0.5s;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.toggle ul li:hover
+{
+    transform: scale(120%);
+}
+
+.toggle a:hover
+{
+    color: rgb(4, 124, 151);
+}
+
+.mark
+{
+    position: absolute;
+    float: left;
+    left: 36px;
+    font-size: 18px;
+}
+
+.color_text
+{
+    color: rgb(15, 201, 233);
+}
+
+.aside
+{
+    position: absolute;
+    height: 2500px;
+    top: -69px;
+    left: -36px;
+    border-right: 4px solid rgb(6, 141, 22);
+    background: rgb(1, 8, 8);
+    z-index: 99999;
+}
+
+.aside a
+{
+    font-family: 'Alkalami', serif;
+    padding: 12px;
+    padding-left: 36px;
+    margin-right: 42px;
+    height: 42px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    display: block;
+    color: rgb(28, 227, 181);
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.aside a:hover
+{
+    color: rgb(10, 134, 134);
+    transform: scale(110%);
+}
+
+.hexvel_logo
+{
+    padding: 42px;
+    border-radius: 50%;
+}
+
+.home_text
+{
+    margin-right: 25px;
+    font-family: 'Nabla', cursive;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 180px;
+    top: 160px;
+    font-size: 24px;
+    color: rgb(235, 168, 0);
+    padding: 24px;
+}
+
+.home_text h3
+{
+    position: relative;
+    left: -54px;
+}
+
+.contacts h3
+{
+    position: relative;
+    left: -54px;
+}
+
+h3
+{
+    font-family: 'Nabla', cursive;
+    color: rgb(5, 217, 115);
+}
+
+hr
+{
+    background: rgb(255, 0, 0);
+    position: relative;
+    top: 200px;
+    margin-left: 250px;
+    width: 75%;
+}
+
+.contacts
+{
+    font-family: 'Nabla', cursive;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 700px;left: 170px;
+    font-size: 24px;
+    color: rgb(235, 168, 0);
+    padding: 64px;
+}
+
+.horizontal_line
+{
+    position: absolute;
+    top: 600px;
+}
+
+.hr
+{
+    position: absolute;
+    top: 830px;
+}
