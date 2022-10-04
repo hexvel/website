@@ -19,6 +19,14 @@ ul li
 
 }
 
+.contacts a
+{
+    text-decoration: none;
+    color: rgb(15, 201, 233);
+    padding: 0;
+    margin: 0;
+}
+
 header a
 {
     padding: 0;
@@ -49,6 +57,12 @@ header a
 .toggle a:hover
 {
     color: rgb(4, 124, 151);
+}
+
+.text
+{
+    font-size: 20px;
+    color: chartreuse;
 }
 
 .mark
@@ -109,10 +123,7 @@ header a
 
 .home_text
 {
-    margin-right: 25px;
     position: absolute;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     top: 160px;
     font-size: 24px;
@@ -171,10 +182,103 @@ div.contacts
     left: 450px;
 }
 
-div.developers
+.bottom
 {
-    background: rgb(55, 60, 65);
-    border-radius: 20px;
-    width: 785px;
-    left: 450px;
+    position: absolute;
+    margin-top: 160%;
+    color: aqua;
+    left: 70px;
+    height: 50px;
+    border-radius: 18px;
+    background: cadetblue;
+    padding: 8px;
+}
+
+@media (max-width: 940px)
+{
+    .aside
+    {
+        opacity: 0;
+    }
+    div.home_text
+    {
+        width: 260px;
+        font-size: 16px;
+        left: 60px;
+    }
+    div.contacts
+    {
+        width: 260px;
+        font-size: 16px;
+        left: 60px;
+    }
+    header
+    {
+        background: rgb(62, 61, 61);
+        top: 0;
+        right: 0;
+        left: 0;
+        font-size: 12px;
+        color: rgb(151, 4, 99);
+        position: fixed;
+        z-index: 1;
+        height: 54px;
+    }
+    .toggle ul li
+    {
+        padding: 10px;
+        text-align: center;
+        background: rgb(134, 129, 125);
+    }
+    .toggle ul li:hover
+    {
+        background: rgb(3, 208, 211);
+        transform: scale(110%);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 400px)
+{
+    header
+    {
+        background: rgb(62, 61, 61);
+        top: 0;
+        right: 0;
+        left: 0;
+        font-size: 12px;
+        color: rgb(151, 4, 99);
+        position: fixed;
+        z-index: 1;
+        height: 54px;
+    }
+    div.home_text
+    {
+        width: 220px;
+        font-size: 16px;
+        left: 40px;
+    }
+    div.contacts
+    {
+        width: 220px;
+        font-size: 16px;
+        left: 40px;
+    }
+    .toggle ul li
+    {
+        padding: 4px;
+        text-align: center;
+        background: rgb(134, 129, 125);
+    }
+    .bottom
+{
+    position: absolute;
+    margin-top: 300%;
+    color: aqua;
+    left: 40px;
+    height: 50px;
+    border-radius: 18px;
+    background: cadetblue;
+    padding: 8px;
+}
 }
