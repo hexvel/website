@@ -11,7 +11,7 @@ body
 {
     margin: 0;
     padding: 0;
-    background: rgb(21, 2, 29);
+    background: rgb(6, 0, 8);
 }
 ul li
 {
@@ -57,6 +57,7 @@ header a
     float: left;
     left: 36px;
     font-size: 18px;
+    z-index: 999;
 }
 
 .color_text
@@ -66,12 +67,13 @@ header a
 
 .aside
 {
+    padding: 25px;
     position: absolute;
     height: 2500px;
     top: -69px;
     left: -36px;
     border-right: 4px solid rgb(6, 141, 22);
-    background: rgb(1, 8, 8);
+    background: rgba(39, 40, 43, 0.979);
     z-index: 99999;
 }
 
@@ -79,11 +81,11 @@ header a
 {
     font-family: 'Alkalami', serif;
     padding: 12px;
-    padding-left: 36px;
-    margin-right: 42px;
+    margin-left: 12px;
+    width: 124px;
     height: 42px;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 83, 92);
     display: block;
     color: rgb(28, 227, 181);
     text-decoration: none;
@@ -92,42 +94,32 @@ header a
 
 .aside a:hover
 {
+    border: none;
     color: rgb(10, 134, 134);
     transform: scale(110%);
 }
 
 .hexvel_logo
 {
-    padding: 42px;
-    border-radius: 50%;
+    margin-top: 60px;
+    margin-left: 42px;
+    margin-bottom: 90px;
+    border-radius: 60%;
 }
 
 .home_text
 {
     margin-right: 25px;
-    font-family: 'Nabla', cursive;
     position: absolute;
     justify-content: center;
     align-items: center;
     text-align: center;
-    left: 180px;
     top: 160px;
     font-size: 24px;
     color: rgb(235, 168, 0);
     padding: 24px;
 }
 
-.home_text h3
-{
-    position: relative;
-    left: -54px;
-}
-
-.contacts h3
-{
-    position: relative;
-    left: -54px;
-}
 
 h3
 {
@@ -135,18 +127,9 @@ h3
     color: rgb(5, 217, 115);
 }
 
-hr
-{
-    background: rgb(255, 0, 0);
-    position: relative;
-    top: 200px;
-    margin-left: 250px;
-    width: 75%;
-}
 
 .contacts
 {
-    font-family: 'Nabla', cursive;
     position: absolute;
     text-align: center;
     justify-content: center;
@@ -154,17 +137,44 @@ hr
     top: 700px;left: 170px;
     font-size: 24px;
     color: rgb(235, 168, 0);
-    padding: 64px;
+    padding: 24px;
 }
 
-.horizontal_line
+.developers
 {
+    font-family: 'Nabla', cursive;
     position: absolute;
-    top: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 1200px;
+    left: 170px;
+    font-size: 24px;
+    color: rgb(235, 168, 0);
+    padding: 24px;
 }
 
-.hr
+div.home_text
 {
-    position: absolute;
-    top: 830px;
+    background: rgb(55, 60, 65);
+    border-radius: 20px;
+    width: 785px;
+    left: 450px;
+}
+
+
+div.contacts
+{
+    background: rgb(55, 60, 65);
+    border-radius: 20px;
+    width: 785px;
+    left: 450px;
+}
+
+div.developers
+{
+    background: rgb(55, 60, 65);
+    border-radius: 20px;
+    width: 785px;
+    left: 450px;
 }
