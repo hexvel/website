@@ -182,6 +182,11 @@ div.contacts
     left: 450px;
 }
 
+.bottom
+{
+    opacity: 0;
+}
+
 @media (max-width: 940px)
 {
     .aside
