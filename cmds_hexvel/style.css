@@ -224,7 +224,11 @@ div.contacts
         transform: scale(110%);
         cursor: pointer;
     }
-}
+    
+    .bottom
+    {
+        opacity: 0;
+    }
 
 @media (max-width: 400px)
 {
