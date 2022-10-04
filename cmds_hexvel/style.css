@@ -182,18 +182,6 @@ div.contacts
     left: 450px;
 }
 
-.bottom
-{
-    position: absolute;
-    margin-top: 160%;
-    color: aqua;
-    left: 70px;
-    height: 50px;
-    border-radius: 18px;
-    background: cadetblue;
-    padding: 8px;
-}
-
 @media (max-width: 940px)
 {
     .aside
@@ -271,14 +259,14 @@ div.contacts
         background: rgb(134, 129, 125);
     }
     .bottom
-{
-    position: absolute;
-    margin-top: 300%;
-    color: aqua;
-    left: 40px;
-    height: 50px;
-    border-radius: 18px;
-    background: cadetblue;
-    padding: 8px;
-}
+    {
+        position: absolute;
+        margin-top: 300%;
+        color: aqua;
+        left: 40px;
+        height: 50px;
+        border-radius: 18px;
+        background: cadetblue;
+        padding: 8px;
+    }
 }
