@@ -151,10 +151,6 @@ body {
     clear: both;
 }
 
-.wrapper {
-    background-color: #4D533C;
-}
-
 .text__small {
     color: rgba(77, 83, 60, 0.9);
     font-family: "Poppins";
